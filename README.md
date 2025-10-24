@@ -32,21 +32,38 @@ bash mcp-server-generator/validate-server-json.sh path/to/server.json
 ls mcp-server-generator/examples/
 ```
 
+## Installation
+
+### Via Claude Code Marketplace
+
+Install directly from Claude Code using the plugin marketplace:
+
+```bash
+/plugin marketplace add dmartinol/skills
+```
+
+This will install the entire MCP development skills collection to your Claude Code environment.
+
+### Manual Installation
+
+Alternatively, copy individual skills to your project:
+
+```bash
+# Copy specific skill to your project
+cp -r mcp-server-generator /your/project/.claude/skills/
+
+# Or clone the entire repository
+git clone https://github.com/dmartinol/skills.git
+cp -r skills/mcp-server-generator /your/project/.claude/skills/
+```
+
 ## Using These Skills
 
 ### With Claude Code
 
-Skills in this repository are designed to be used with Claude Code. To use them:
+Once installed, reference the skill in your Claude Code conversations:
 
-1. Copy the skill directory to your project's `.claude/skills/` folder
-2. Reference the skill in your Claude Code conversations
-3. Claude will automatically load and execute the skill instructions
-
-Example:
 ```bash
-# Copy skill to your project
-cp -r mcp-server-generator /your/project/.claude/skills/
-
 # In Claude Code conversation:
 "Generate an MCP server.json for https://github.com/example/my-server"
 ```

@@ -1,0 +1,22 @@
+{
+  "name": "mcp-development-skills",
+  "owner": {
+    "name": "Daniele Martinoli",
+    "email": "dmartino@redhat.com"
+  },
+  "metadata": {
+    "description": "Production-ready skills for MCP (Model Context Protocol) development and automation",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mcp-server-generator",
+      "description": "Automatically generates compliant server.json files for MCP servers and hosted services following official registry specifications. Supports NPM, PyPI, OCI, MCPB, NuGet packages and remote/hosted MCP services with built-in validation.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./mcp-server-generator"
+      ]
+    }
+  ]
+}
