@@ -1,0 +1,340 @@
+[
+  {
+    "name": "ai.toolprint/hypertool-mcp",
+    "safe_name": "ai_toolprint_hypertool-mcp",
+    "repo_url": "https://github.com/toolprint/hypertool-mcp",
+    "official_path": "./mcp-servers/test/ai_toolprint_hypertool-mcp-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-ai_toolprint_hypertool-mcp-1761302776",
+    "generated_path": "./mcp-servers/test/ai_toolprint_hypertool-mcp-generated.json",
+    "generation_method": "from_repo",
+    "comparison": {
+      "total_diffs": 6,
+      "differences": [
+        {
+          "type": "value_diff",
+          "path": "$schema",
+          "generated": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+          "official": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json"
+        },
+        {
+          "type": "missing_in_generated",
+          "path": "packages[0].registryBaseUrl",
+          "value": "https://registry.npmjs.org"
+        },
+        {
+          "type": "missing_in_generated",
+          "path": "packages[0].registryType",
+          "value": "npm"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].registry_base_url",
+          "value": "https://registry.npmjs.org"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].registry_type",
+          "value": "npm"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "status",
+          "value": "active"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ai.mcpcap/mcpcap",
+    "safe_name": "ai_mcpcap_mcpcap",
+    "repo_url": "https://github.com/mcpcap/mcpcap",
+    "official_path": "./mcp-servers/test/ai_mcpcap_mcpcap-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-ai_mcpcap_mcpcap-1761302794",
+    "generated_path": "./mcp-servers/test/ai_mcpcap_mcpcap-generated.json",
+    "generation_method": "from_repo",
+    "comparison": {
+      "total_diffs": 8,
+      "differences": [
+        {
+          "type": "value_diff",
+          "path": "$schema",
+          "generated": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+          "official": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json"
+        },
+        {
+          "type": "missing_in_generated",
+          "path": "packages[0].registryBaseUrl",
+          "value": "https://pypi.org"
+        },
+        {
+          "type": "missing_in_generated",
+          "path": "packages[0].registryType",
+          "value": "pypi"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].registry_base_url",
+          "value": "https://pypi.org"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].registry_type",
+          "value": "pypi"
+        },
+        {
+          "type": "value_diff",
+          "path": "packages[0].version",
+          "generated": "0.4.4",
+          "official": "0.4.3"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "status",
+          "value": "active"
+        },
+        {
+          "type": "value_diff",
+          "path": "version",
+          "generated": "0.4.4",
+          "official": "0.4.3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ai.aliengiraffe/spotdb",
+    "safe_name": "ai_aliengiraffe_spotdb",
+    "repo_url": "https://github.com/aliengiraffe/spotdb",
+    "official_path": "./mcp-servers/test/ai_aliengiraffe_spotdb-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-ai_aliengiraffe_spotdb-1761302795",
+    "generated_path": "./mcp-servers/test/ai_aliengiraffe_spotdb-generated.json",
+    "generation_method": "from_repo",
+    "comparison": {
+      "total_diffs": 5,
+      "differences": [
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].environmentVariables[0].isRequired",
+          "value": false
+        },
+        {
+          "type": "value_diff",
+          "path": "packages[0].identifier",
+          "generated": "aliengiraffe/spotdb",
+          "official": "docker.io/aliengiraffe/spotdb:0.1.0"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].registryBaseUrl",
+          "value": "https://docker.io"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].version",
+          "value": "v1.3.0"
+        },
+        {
+          "type": "value_diff",
+          "path": "version",
+          "generated": "v1.3.0",
+          "official": "0.1.0"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ai.waystation/airtable",
+    "safe_name": "ai_waystation_airtable",
+    "repo_url": "https://github.com/waystation-ai/mcp",
+    "official_path": "./mcp-servers/test/ai_waystation_airtable-official.json",
+    "status": "official_saved",
+    "has_packages": false,
+    "has_remotes": true,
+    "type": "remote",
+    "generated_path": "./mcp-servers/test/ai_waystation_airtable-generated.json",
+    "generation_method": "copy_official",
+    "comparison": {
+      "total_diffs": 0,
+      "differences": []
+    }
+  },
+  {
+    "name": "ai.klavis/strata",
+    "safe_name": "ai_klavis_strata",
+    "repo_url": "https://github.com/Klavis-AI/klavis",
+    "official_path": "./mcp-servers/test/ai_klavis_strata-official.json",
+    "status": "official_saved",
+    "has_packages": false,
+    "has_remotes": true,
+    "type": "remote",
+    "generated_path": "./mcp-servers/test/ai_klavis_strata-generated.json",
+    "generation_method": "copy_official",
+    "comparison": {
+      "total_diffs": 0,
+      "differences": []
+    }
+  },
+  {
+    "name": "io.github.Abraxas1010/agent-payment-mcp",
+    "safe_name": "io_github_Abraxas1010_agent-payment-mcp",
+    "repo_url": "https://github.com/Abraxas1010/agent-payment-mcp",
+    "official_path": "./mcp-servers/test/io_github_Abraxas1010_agent-payment-mcp-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-io_github_Abraxas1010_agent-payment-mcp-1761302796",
+    "generated_path": "./mcp-servers/test/io_github_Abraxas1010_agent-payment-mcp-generated.json",
+    "generation_method": "from_repo",
+    "comparison": {
+      "total_diffs": 10,
+      "differences": [
+        {
+          "type": "missing_in_official",
+          "path": "categories",
+          "value": [
+            "finance",
+            "payments",
+            "automation"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "homepage",
+          "value": "https://agentpmt.com"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "license",
+          "value": "MIT"
+        },
+        {
+          "type": "missing_in_official",
+          "path": "longDescription",
+          "value": "AgentPMT enables AI agents to securely make real-world payments using USDC stablecoin on Base blockchain. Our platform provides granular budget controls, instant settlement, and API/MCP integration for autonomous transactions. Perfect for businesses leveraging AI automation, we bridge the gap between artificial intelligence and the digital economy with enterprise-grade security and complete spending oversight."
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[0].platforms",
+          "value": [
+            "linux-amd64"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[1].platforms",
+          "value": [
+            "darwin-amd64"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[2].platforms",
+          "value": [
+            "darwin-arm64"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "packages[3].platforms",
+          "value": [
+            "windows-amd64"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "tags",
+          "value": [
+            "payments",
+            "blockchain",
+            "usdc",
+            "stablecoin",
+            "base",
+            "budget-control",
+            "ai-agents",
+            "autonomous",
+            "enterprise"
+          ]
+        },
+        {
+          "type": "missing_in_official",
+          "path": "vendor",
+          "value": {
+            "name": "AgentPMT",
+            "websiteUrl": "https://agentpmt.com"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "com.joelverhagen.mcp/Knapcode.SampleMcpServer",
+    "safe_name": "com_joelverhagen_mcp_Knapcode_SampleMcpServer",
+    "repo_url": "https://github.com/joelverhagen/Knapcode.SampleMcpServer.git",
+    "official_path": "./mcp-servers/test/com_joelverhagen_mcp_Knapcode_SampleMcpServer-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-com_joelverhagen_mcp_Knapcode_SampleMcpServer-1761302814",
+    "generation_method": "copy_official",
+    "generated_path": "./mcp-servers/test/com_joelverhagen_mcp_Knapcode_SampleMcpServer-generated.json",
+    "comparison": {
+      "total_diffs": 0,
+      "differences": []
+    }
+  },
+  {
+    "name": "ai.wild-card/deepcontext",
+    "safe_name": "ai_wild-card_deepcontext",
+    "repo_url": "https://github.com/Wildcard-Official/deepcontext",
+    "official_path": "./mcp-servers/test/ai_wild-card_deepcontext-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": false,
+    "error": "Command '['git', 'clone', '--depth', '1', 'https://github.com/Wildcard-Official/deepcontext', '/tmp/mcp-server-analysis-ai_wild-card_deepcontext-1761302815']' returned non-zero exit status 128.",
+    "generated_path": "./mcp-servers/test/ai_wild-card_deepcontext-generated.json",
+    "generation_method": "copy_official",
+    "comparison": {
+      "total_diffs": 0,
+      "differences": []
+    }
+  },
+  {
+    "name": "com.gitkraken/gk-cli",
+    "safe_name": "com_gitkraken_gk-cli",
+    "repo_url": "https://github.com/gitkraken/gk-cli",
+    "official_path": "./mcp-servers/test/com_gitkraken_gk-cli-official.json",
+    "status": "official_saved",
+    "has_packages": true,
+    "has_remotes": false,
+    "type": "package",
+    "cloned": true,
+    "temp_dir": "/tmp/mcp-server-analysis-com_gitkraken_gk-cli-1761302815",
+    "generation_method": "copy_official",
+    "generated_path": "./mcp-servers/test/com_gitkraken_gk-cli-generated.json",
+    "comparison": {
+      "total_diffs": 0,
+      "differences": []
+    }
+  }
+]

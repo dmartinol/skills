@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server.schema.json",
+  "name": "com.redhat.testing-farm/testing-farm-mcp",
+  "description": "MCP server for Testing Farm Service - submit tests and list composes",
+  "version": "0.1.0",
+  "title": "Testing Farm MCP Server",
+  "websiteUrl": "https://github.com/thrix/testing-farm-mcp",
+  "repository": {
+    "url": "https://github.com/thrix/testing-farm-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "testing-farm-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TESTING_FARM_API_TOKEN",
+          "description": "Testing Farm API token for authentication",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TESTING_FARM_API_URL",
+          "description": "Testing Farm API URL (optional, defaults to public API)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/thrix/testing-farm-mcp:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TESTING_FARM_API_TOKEN",
+          "description": "Testing Farm API token for authentication",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TESTING_FARM_API_URL",
+          "description": "Testing Farm API URL (optional, defaults to public API)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/thrix/testing-farm-mcp:latest",
+      "transport": {
+        "type": "sse",
+        "url": "http://localhost:9001/sse"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "fastmcp"
+        },
+        {
+          "type": "positional",
+          "value": "run"
+        },
+        {
+          "type": "named",
+          "name": "--transport",
+          "value": "sse"
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "value": "0.0.0.0"
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "value": "9001"
+        },
+        {
+          "type": "positional",
+          "value": "testing_farm_mcp/server.py"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "TESTING_FARM_API_TOKEN",
+          "description": "Testing Farm API token for authentication",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TESTING_FARM_API_URL",
+          "description": "Testing Farm API URL (optional, defaults to public API)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
